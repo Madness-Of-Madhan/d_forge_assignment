@@ -1,0 +1,26 @@
+# Core Web Framework
+Flask==3.0.0
+Flask-CORS==4.0.0
+Werkzeug==3.0.1
+gunicorn==21.2.0
+
+# Google AI & LangChain
+# FIX: Updated google-generativeai to 0.8.0 to resolve conflict with langchain-google-genai 2.0.2
+google-generativeai==0.8.0
+langchain==0.3.8
+langchain-core==0.3.38
+langchain-community==0.3.8
+langchain-google-genai==2.0.2
+
+# Utilities and Data
+python-dotenv==1.0.1
+PyPDF2==3.0.1
+
+# Numeric/Vector Database
+# Kept as requested. faiss-cpu has specific builds, 1.13.1 should work with Python 3.11 on Windows (cp311).
+faiss-cpu==1.13.1 
+numpy==1.26.4 # Pinned to the latest 1.x version that supports Python 3.11
+
+ sentence_transformers
+ groq
+ langchain-groq
